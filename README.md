@@ -1,9 +1,3 @@
 # rahultiwari.com
-My website
 
-
-
-/*
-
-
-*/
+A general introductory website about me using HTML and CSS
