@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     text-align: center;
@@ -79,11 +83,6 @@ p {
     bottom: 400px;
 }
 
-.top-cloud {
-    position: relative;
-    left: 300px;
-}
-
 .background-image {
     width: 100%;
     height: 100%;
@@ -150,6 +149,131 @@ p {
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
   }
+
+  .footer-link {
+  color: #11999e;
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #30e3cb;
+  transform: translateY(-1px);
+}
+
+  /* Navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 40px;
+  display: flex;
+  justify-content: flex-end;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.nav-right {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background: rgba(17, 153, 158, 0.9);
+  border: 1px solid rgba(234, 246, 246, 0.6);
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.nav-contact-link:hover {
+  background: #30e3cb;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.nav-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  margin-right: 50px;
+  border-radius: 999px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background: rgba(17, 153, 158, 0.9);
+  border: 1px solid rgba(234, 246, 246, 0.6);
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.nav-resume-btn:hover {
+  background: rgba(48, 227, 203, 0.92);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  color: #eaf6f6;
+}
+
+.nav-resume-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Media queries for mobile responsiveness*/
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 16px;
+  }
+
+  .nav-right {
+    gap: 8px;
+  }
+
+  .nav-resume-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .nav-contact-link {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .skill-row {
+    width: 80%;
+    text-align: left;
+  }
+
+  .intro,
+  .contact-message {
+    width: 80%;
+  }
+}
+
+
 
 
 
